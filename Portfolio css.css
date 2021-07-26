@@ -5,6 +5,7 @@
 body{
     margin:0;
     /* min-width:100%; */
+    overflow-x:hidden;
 }
 .first{
     background-image: url("jess-bailey-q10VITrVYUM-unsplash.jpg");
