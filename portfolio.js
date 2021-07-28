@@ -15,7 +15,7 @@ const mainFun=()=>{
         navbar.classList.remove('sticky');
     }
     sections.forEach((section,i)=>{
-        if(window.pageYOffset>=section.offsetTop){
+        if(window.pageYOffset>=section.offsetTop-7){
             navlink.forEach(x=>{
                 x.classList.remove('change');
             })
