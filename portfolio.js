@@ -29,6 +29,4 @@ const mainFun=()=>{
     }
 }
 mainFun();
-window.addEventListener('resize',()=>{
-    window.location.reload();
-});
+
