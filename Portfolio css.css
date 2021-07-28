@@ -2,14 +2,12 @@
     margin:0;
     padding:0;
 }
-html,body{
-    overflow-x:hidden;
-}
 body{
     margin:0;
-    padding:0;
     /* min-width:100%; */
-    
+}
+html{
+    scroll-behavior: smooth;
 }
 .first{
     background-image: url("jess-bailey-q10VITrVYUM-unsplash.jpg");
@@ -63,6 +61,11 @@ span{
 /* navbar------- */
 /* navbar------- */
 /* navbar------- */
+.sticky{
+    position: fixed;
+    top:0;
+    width: 100vw;
+}
 .navbar{
     background-color:#ff99ac ;
     padding-top: 0.25rem;
@@ -71,6 +74,7 @@ span{
     padding-right: 0;
     margin-right:0;
     margin-left:0;
+    z-index:300; 
 }
 .nav-link{
     color:rgb(0, 0, 0);
@@ -95,8 +99,14 @@ span{
     bottom:-0.01rem;
     transition: width 0.2s;
 }
+.change.nav-link{
+    color:#fff;
+}
 .nav-link:hover{
     color:#fff;
+}
+.change.nav-link::before{
+    width:130%;
 }
 .nav-link:hover::before{
     width:130%;
@@ -173,10 +183,11 @@ span{
     font-weight:500;
 }
 .progress-percent{
-    width:80%;
+    width:0;
     height:100%;
     background-color: violet;
     border-radius: 0.5rem;
+    transition:width 0.5s 0.5s ease-in-out;
 }
 .services{
     width:100%;
