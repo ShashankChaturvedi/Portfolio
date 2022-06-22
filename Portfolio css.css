@@ -9,6 +9,9 @@ body{
 html{
     scroll-behavior: smooth;
 }
+#first-1{
+    width: 100%;
+}
 .first{
     background-image: url("jess-bailey-q10VITrVYUM-unsplash.jpg");
     background-size: cover;
