@@ -288,9 +288,8 @@ svg{
 }
 .card-title , .tech{
     text-align: center;
-    color:rgb(255, 11, 105);
+    color:rgb(16 255 35);
     font-weight: 400;
-    text-shadow: 0.3rem 0.3rem 0.6rem rgb(255, 11, 105);
 }
 .card-img-overlay{
     display: flex;
@@ -305,14 +304,18 @@ svg{
 }
 .project-link{
     margin-top:0.6rem;
-    border: 2px solid rgb(255, 11, 105);
+    border: 2px solid rgb(16 255 35);
     padding:0.3rem 1.7rem;
     text-decoration: none;
     border-radius: 2rem;
     background-color: rgba(39, 37, 37, 0.171);
     color:rgb(255, 11, 105);
-    box-shadow: 0.1rem 0.4rem 0.5rem rgb(255, 11, 105);
     font-weight: 400;
+    transition:transform 0.3s, box-shadow 0.3s;
+}
+.project-link:hover{
+    transform: translateY(-2px);
+    box-shadow: 0.1rem 0.2rem 0.5rem rgb(16 255 35);
 }
 img{
     transition: all 0.4s;
