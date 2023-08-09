@@ -282,6 +282,7 @@ svg{
 }
 .card{
     transition:box-shadow 0.5s;
+    height:100%;
 }
 .card:hover{
     box-shadow: 0.8rem 0.6rem 0.5rem #555;
